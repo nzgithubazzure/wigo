@@ -8,7 +8,7 @@ async function main() {
 }
 
 async function loadDogs() {
-    const response = await fetch('/api/dogs');
+    const response = await fetch('wigo/api/dogs');
     const json = await response.json();
 
     for (let dog of json.dogs) {
